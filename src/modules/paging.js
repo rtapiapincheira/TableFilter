@@ -75,7 +75,7 @@ export class Paging extends Feature {
          * ['Records: ', [10,25,50,100]]
          * @type {Array}
          */
-        this.resultsPerPage = f.results_per_page || null;
+        this.resultsPerPage = ['Registros: ', [10,25,50,100]];
 
         /**
          * Determines if results per page is configured
@@ -147,7 +147,7 @@ export class Paging extends Feature {
         this.btnNextPageHtml = f.btn_next_page_html ||
             (!tf.enableIcons ? null :
                 '<input type="button" value="" class="' + this.btnPageCssClass +
-                ' nextPage" title="Next page" />');
+                ' nextPage" title="Página siguiente" />');
 
         /**
          * Previous page button HTML
@@ -156,7 +156,7 @@ export class Paging extends Feature {
         this.btnPrevPageHtml = f.btn_prev_page_html ||
             (!tf.enableIcons ? null :
                 '<input type="button" value="" class="' + this.btnPageCssClass +
-                ' previousPage" title="Previous page" />');
+                ' previousPage" title="Página anterior" />');
 
         /**
          * First page button HTML
@@ -165,7 +165,7 @@ export class Paging extends Feature {
         this.btnFirstPageHtml = f.btn_first_page_html ||
             (!tf.enableIcons ? null :
                 '<input type="button" value="" class="' + this.btnPageCssClass +
-                ' firstPage" title="First page" />');
+                ' firstPage" title="Primera página" />');
 
         /**
          * Last page button HTML
@@ -174,19 +174,19 @@ export class Paging extends Feature {
         this.btnLastPageHtml = f.btn_last_page_html ||
             (!tf.enableIcons ? null :
                 '<input type="button" value="" class="' + this.btnPageCssClass +
-                ' lastPage" title="Last page" />');
+                ' lastPage" title="Última página" />');
 
         /**
          * Text preceeding page selector drop-down
          * @type {String}
          */
-        this.pageText = f.page_text || ' Page ';
+        this.pageText = f.page_text || ' Página ';
 
         /**
          * Text after page selector drop-down
          * @type {String}
          */
-        this.ofText = f.of_text || ' of ';
+        this.ofText = f.of_text || ' de ';
 
         /**
          * Css class for the span containing total number of pages
@@ -381,7 +381,7 @@ export class Paging extends Feature {
                 var btnNext = createElm(INPUT,
                     ['type', 'button'],
                     ['value', this.btnNextPageText],
-                    ['title', 'Next']
+                    ['title', 'Siguiente']
                 );
                 btnNext.className = this.btnPageCssClass;
                 addEvt(btnNext, 'click', evt.next);
@@ -395,7 +395,7 @@ export class Paging extends Feature {
                 var btnPrev = createElm(INPUT,
                     ['type', 'button'],
                     ['value', this.btnPrevPageText],
-                    ['title', 'Previous']
+                    ['title', 'Anterior']
                 );
                 btnPrev.className = this.btnPageCssClass;
                 addEvt(btnPrev, 'click', evt.prev);
@@ -409,7 +409,7 @@ export class Paging extends Feature {
                 var btnLast = createElm(INPUT,
                     ['type', 'button'],
                     ['value', this.btnLastPageText],
-                    ['title', 'Last']
+                    ['title', 'Última']
                 );
                 btnLast.className = this.btnPageCssClass;
                 addEvt(btnLast, 'click', evt.last);
@@ -423,7 +423,7 @@ export class Paging extends Feature {
                 var btnFirst = createElm(INPUT,
                     ['type', 'button'],
                     ['value', this.btnFirstPageText],
-                    ['title', 'First']
+                    ['title', 'Primera']
                 );
                 btnFirst.className = this.btnPageCssClass;
                 addEvt(btnFirst, 'click', evt.first);

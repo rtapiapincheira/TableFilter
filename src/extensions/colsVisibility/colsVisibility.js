@@ -117,7 +117,7 @@ export default class ColsVisibility extends Feature {
          * Columns manager UI close link text, defaults to 'Close'
          * @type {String}
          */
-        this.btnCloseText = f.btn_close_text || 'Close';
+        this.btnCloseText = f.btn_close_text || 'Cerrar';
 
         /**
          * Columns manager UI close link HTML
@@ -198,7 +198,7 @@ export default class ColsVisibility extends Feature {
          * Text for select all option, defaults to 'Select all:'
          * @type {String}
          */
-        this.tickAllText = f.tick_all_text || 'Select all:';
+        this.tickAllText = f.tick_all_text || 'Seleccionar todo:';
 
         /**
          * List of indexes of hidden columns

@@ -41,13 +41,15 @@ export class Help extends Feature {
          */
         this.instrText = f.help_instructions_text ?
             f.help_instructions_text :
-            'Use the filters above each column to filter and limit table ' +
-            'data. Advanced searches can be performed by using the following ' +
-            'operators: <br /><b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, ' +
+            'Use los filtros sobre cada columna para <br/> ' +
+            'filtrar y limitar los datos de la tabla. Se <br/>' +
+            'pueden hacer búsquedas avanzadas <br/>' +
+            'usando los siguientes operadores: ' +
+            '<br /><b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, ' +
             '<b>&gt;=</b>, <b>=</b>, <b>*</b>, <b>!</b>, <b>{</b>, <b>}</b>, ' +
             '<b>||</b>,<b>&amp;&amp;</b>, <b>[empty]</b>, <b>[nonempty]</b>, ' +
             '<b>rgx:</b><br/><a href="' + WIKI_URL + '" target="_blank">' +
-            'Learn more</a><hr/>';
+            'Ver más</a><hr/>';
 
         /**
          * Instructions HTML

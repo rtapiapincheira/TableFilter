@@ -518,7 +518,7 @@ export class TableFilter {
          * Text for clear option in drop-down filter types (1st option)
          * @type {String|Array}
          */
-        this.clearFilterText = f.clear_filter_text || 'Clear';
+        this.clearFilterText = f.clear_filter_text || 'Limpiar';
 
         /**
          * Indicate whether empty option is enabled in drop-down filter types
@@ -530,7 +530,7 @@ export class TableFilter {
          * Text for empty option in drop-down filter types
          * @type {String}
          */
-        this.emptyText = f.empty_text || '(Empty)';
+        this.emptyText = f.empty_text || '(Vacío)';
 
         /**
          * Indicate whether non-empty option is enabled in drop-down filter
@@ -543,7 +543,7 @@ export class TableFilter {
          * Text for non-empty option in drop-down filter types
          * @type {String}
          */
-        this.nonEmptyText = f.non_empty_text || '(Non empty)';
+        this.nonEmptyText = f.non_empty_text || '(No vacío)';
 
         /**
          * Indicate whether drop-down filter types filter the table by default

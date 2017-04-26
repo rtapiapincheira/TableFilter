@@ -52,7 +52,7 @@ export class ClearButton extends Feature {
          * Tooltip text for the clear button
          * @type {String}
          */
-        this.tooltip = f.btn_reset_tooltip || 'Clear filters';
+        this.tooltip = f.btn_reset_tooltip || 'Limpiar filtros';
 
         /**
          * Custom Html string for the clear button
