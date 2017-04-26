@@ -44,7 +44,7 @@ export class RowsCounter extends Feature {
          * Text preceding the total number of rows
          * @type {String}
          */
-        this.text = f.rows_counter_text || 'Rows: ';
+        this.text = f.rows_counter_text || 'Filas: ';
 
         /**
          * Separator symbol appearing between the first and last visible rows of
